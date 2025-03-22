@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.universal.json",
+  // Copied from @tsconfig/node22
+  "compilerOptions": {
+    //HEADER - Interop Constraints
+    "esModuleInterop": true,
+
+    //HEADER - Language and Environment
+    "target": "ES2022",
+    "lib": ["ES2023"]
+  }
+}

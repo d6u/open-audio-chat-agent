@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.universal.json",
+  "compilerOptions": {
+    //HEADER - Modules
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    //HEADER - Language and Environment
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+  }
+}

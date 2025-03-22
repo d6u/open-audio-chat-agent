@@ -1,0 +1,7 @@
+{
+  "extends": "@repo/common-tsconfig/tsconfig.node.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["./**/*.ts"]
+}

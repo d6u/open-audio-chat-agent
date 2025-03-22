@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev --ui tui"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "dotenv-cli": "^7.4.4",
+    "prettier": "^3.5.2",
+    "prettier-plugin-packagejson": "^2.5.9",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "turbo": "^2.4.4",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@10.4.1",
+  "engines": {
+    "node": "=22.14.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@sinclair/typebox": "^0.34.28",
+      "@types/node": "^22.9.0",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
+      "rxjs": "^7.8.1",
+      "tiny-invariant": "^1.3.3",
+      "tsx": "^4.19.3",
+      "typescript": "^5.8.2"
+    }
+  }
+}

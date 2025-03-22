@@ -1,0 +1,15 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@repo/common-tsconfig": "workspace:^",
+    "@types/node": "^22.9.0",
+    "@types/ws": "^8.18.0",
+    "openai": "^4.89.0",
+    "speaker": "^0.5.5",
+    "tsx": "^4.19.3",
+    "ws": "^8.18.1"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    //HEADER - Type Checking
+    "strict": true,
+    //BLOCK - Improve dev experiences
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    //!BLOCK
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+
+    //HEADER - Modules
+    "module": "node16",
+    "moduleResolution": "node16",
+
+    //BLOCK - Work together to allow 'import ".ts"' in code,
+    // while generate 'import ".js"' in output files
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    //!BLOCK
+
+    //HEADER - Interop Constraints
+    "isolatedModules": true,
+
+    //HEADER - Language and Environment
+    // Lowest common denominator between web and NodeJS
+    "target": "ES2020",
+    // Explict specifying lib to remove browser environments types.
+    // Make sure this matches "target"
+    "lib": ["ES2020"],
+    "useDefineForClassFields": true,
+    //NOTE - This is required for some local packages to pass type check,
+    // which is currently OK because these code is currently not executed.
+    "jsx": "react-jsx",
+
+    //HEADER - Completeness
+    "skipLibCheck": true
+  }
+}
